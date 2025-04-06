@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTURAUNT</title>
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  position-sticky top-0" style="z-index: 1;">
+      <div class="container-fluid">
+        <img src="images/logo.png" alt="" height="90px" width="90px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="feedback.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="gallery.html">Gallery</a>
+              </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white" href="fastfood.html">Fast foods</a></li>
+                    <li><hr class="dropdown-divider-white bg-light"></li>
+                    <li><a class="dropdown-item text-white" href="beverages.html">Beverages</a></li>
+                    <li><hr class="dropdown-divider-white bg-light"></li>
+                    <li><a class="dropdown-item text-white"  href="chinese.html">Chinese</a></li>
+                    <li><hr class="dropdown-divider-white bg-light"></li>
+                    <li><a class="dropdown-item text-white"  href="#">others</a></li>
+                  </ul>
+                </li>
+         
+            </ul>
+            <button class="btn btn-outline-light m-2 " type="submit" onclick="window.location.href='login.html';">Log In</button>
+            <button class="btn btn-outline-light m-2" type="submit" onclick="window.location.href='Signin.html';">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+
+<!-- nav end -->
+
+<!-- contact us start -->
+
+<div class="container">
+  <div class="row m-2 text-center ">
+      <div class="col text-dark">
+          <h1 class="display-1  fw-bold">Contact Page</h1>
+      </div>
+  </div>
+
+  <div class="row">
+  
+  <div class="col">
+    <h1 class="text-center fw-bold">Sign In</h1>
+    <form class="row g-3">
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">FUll Name</label>
+        <input type="text" class="form-control text-dark" id="inputEmail4" placeholder="Enter Your Full Name" pattern="[A-Za-z]{3,12}" title="Atleast Nmae Should be Three latters" required  pattern="[A-Za-z]{3}"> 
+      </div>
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">Email Id</label>
+        <input type="email" class="form-control" id="inputEmail4" required placeholder="Enter Your Email" pattern="[a-z0-9._-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+      </div>
+      <div class="col-12">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" required placeholder="Enter Your Pasword"pattern=".{8,}" title="Eight or more characters" >
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="inputCity" required  pattern="[0-9]{11}" type="text" pattern="[+92][0-9]{9}" title="phone number must be atleast 11 number"
+        title="Phone number with 7-9 and remaing 9 digit with 0-9">
+      </div>
+    
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" required>
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12 btn-lg d-grid gap-2">
+   
+        <button type="submit" class="btn btn-dark m-2">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="col text-center">
+    <h1 class="fw-bold">Map</h1>
+  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115827.98210761108!2d67.10693599649747!3d24.876673329879576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339ffe271c301%3A0x1e788023a4d35323!2sHaider%20Fast%20Food%20%26%20BBQ!5e0!3m2!1sen!2s!4v1739292320287!5m2!1sen!2s" width="500" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+    <div class="row m-4">
+      <div class="col">
+        <a href="">
+          <i class="fa-solid fa-location-dot" style="font-size: 30px;"></i>
+        </a>
+    <h4>location</h4>
+      </div>
+      <div class="col">
+    <a href="">
+      <i class="fa-solid fa-phone-volume" style="font-size: 30px;"></i>
+    </a>
+    <h4>contact</h4>
+      </div>
+      <div class="col">
+    
+    <form action="mailto:miniproject@gmail.com">
+      <button class="fa-solid fa-square-envelope" style="font-size: 30px; border: none;" ></button>
+    </form>
+    <h4>G-mail</h4>
+    
+    
+       
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+  </div>
+  
+ 
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  <!-- contact us end -->
+
+
+
+
+
+
+
+<footer class="bg-body-tertiary text-center bg-dark text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+        target="_blank"
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="https://www.facebook.com/"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+    
+  
+        <!-- Google -->
+        <a
+        target="_blank"
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="https://www.google.com/"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="https://www.instagram.com/"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="https://www.linkedin.com/"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fdotnet%2Froslyn%2Fissues%2Fnew%2Fchoose"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 Copyright : Project.com
+   
+    <!-- Copyright -->
+  </footer>
+  
+  <!-- footer end -->
+  
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
